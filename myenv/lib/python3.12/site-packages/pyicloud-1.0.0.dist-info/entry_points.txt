@@ -1,3 +1,0 @@
-[console_scripts]
-icloud = pyicloud.cmdline:main
-
