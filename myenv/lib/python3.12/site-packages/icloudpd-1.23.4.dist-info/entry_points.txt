@@ -1,0 +1,3 @@
+[console_scripts]
+icloud = icloud:__main__
+icloudpd = icloudpd:__main__

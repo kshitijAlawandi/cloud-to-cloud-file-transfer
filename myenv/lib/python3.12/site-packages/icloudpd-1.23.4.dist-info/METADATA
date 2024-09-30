@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: icloudpd
+Version: 1.23.4
+Summary: icloudpd is a command-line tool to download photos and videos from iCloud.
+Author: The iCloud Photo Downloader Authors
+License: The MIT License (MIT)
+        
+        Copyright (c) 2016 Nathan Broadbent
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/icloud-photos-downloader/icloud_photos_downloader
+Keywords: icloud,photo
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: wheel <0.41,>=0.40.0 ; extra == 'dev'
+
+# iCloud Photos Downloader [![Quality Checks](https://github.com/icloud-photos-downloader/icloud_photos_downloader/workflows/Quality%20Checks/badge.svg)](https://github.com/icloud-photos-downloader/icloud_photos_downloader/actions/workflows/quality-checks.yml) [![Multi Platform Docker Build](https://github.com/icloud-photos-downloader/icloud_photos_downloader/workflows/Docker%20Build/badge.svg)](https://github.com/icloud-photos-downloader/icloud_photos_downloader/actions/workflows/docker-build.yml) [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
+
+A command-line tool to download all your iCloud photos.
+
+## Install
+
+``` sh
+pip install icloudpd
+```
+
+### Windows
+
+``` sh
+pip install icloudpd --user
+```
+
+Plus add `C:\Users\<YourUserAccountHere>\AppData\Roaming\Python\Python<YourPythonVersionHere>\Scripts` to PATH. The exact path will be given at the end of `icloudpd` installation.
+
+### macOS
+
+Add `/Users/<YourUserAccountHere>/Library/Python/<YourPythonVersionHere>/bin` to PATH. The exact path will be given at the end of `icloudpd` installation.
+
+## Usage
+
+``` sh
+icloudpd --directory /data --username my@email.address --watch-with-interval 3600
+```
+
+Synchronization logic can be adjusted with command-line parameters. Run the following to get full list:
+
+``` sh 
+icloudpd --help
+``` 
+
+## Getting Python & Pip
+
+You can get Python with accompanying Pip from [Official site](https://www.python.org/downloads/).
+
+### Alternatives for Mac
+
+#### Command Line Tools from Apple
+
+Apple provides Python & Pip as part of the Command Line Tools for Xcode. They can be downloaded from Apple Developer portal or installed with 
+
+``` sh
+xcode-select --install
+```
+
+Use `pip3` to install `icloudpd`:
+
+``` sh
+pip3 install icloudpd
+```
+
+#### Homebrew package manager
+
+Homebrew is open source package manager for macOS. Install [Homebrew](https://brew.sh/) (if not already installed):
+
+``` sh
+which brew > /dev/null 2>&1 || /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+Install Python (includes `pip`):
+
+``` sh
+brew install python
+```
+
+### Alternative for Linux (Ubuntu)
+
+``` sh
+sudo apt-get update
+sudo apt-get install -y python
+```
+
+## More
+
+See [Project page](https://github.com/icloud-photos-downloader/icloud_photos_downloader/) for more details.
