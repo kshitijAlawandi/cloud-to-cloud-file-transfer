@@ -78,10 +78,6 @@ This will upload all files from the specified local directory to your OneDrive.
 - Automate the scripts to run on bi-weekly or monthly basis so that iCloud is cleared out regularly.
 - Add more scripts for other cloud-cloud transfers.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - [PyiCloud](https://pypi.org/project/pyicloud/) - Python wrapper for iCloud services.

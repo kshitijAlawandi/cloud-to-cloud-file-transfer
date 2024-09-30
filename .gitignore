@@ -2,3 +2,5 @@ credentials.json
 secret.key
 config.json
 myenv/
+__pycache__/
+.DS_Store
