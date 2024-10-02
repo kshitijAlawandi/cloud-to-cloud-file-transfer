@@ -46,5 +46,5 @@ def download_icloud_photos(download_folder):
 if __name__ == "__main__":
     with open('config.json') as config_file:
         config = json.load(config_file)
-    download_folder = config["download_folder"]  # Change this to your desired folder path
+    download_folder = config["directory"]  # Change this to your desired folder path
     download_icloud_photos(download_folder)
