@@ -33,7 +33,6 @@ Before running the scripts, you need to create a `config.json` file in the proje
 
 ```json
 {
-    "download_folder": "path/to/download/folder",
     "access_token": "your_onedrive_access_token",
     "directory": "path/to/local/files"
 }
